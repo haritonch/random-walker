@@ -4,12 +4,6 @@ var T=100, stepSize=10;
 var canvasHeight = window.screen.height;
 var canvasWidth = window.screen.width;
 
-function getValues(){
-    T = 1/document.getElementById("speed").value;
-    
-    stepSize = document.getElementById("step").value;
-}
-
 function setup(){
     createCanvas(canvasWidth, canvasHeight);
     x = canvasWidth/2;
