@@ -18,10 +18,6 @@ function draw() {
     strokeWeight(1);
     
     var r = floor(random(4));
-    var previousr = r-1;
-    while (r == previousr){ //never go back where you were in the previous step
-        r = floor(random(4));
-    }
     switch (r) {
         case 0:
             x = x + stepSize;
@@ -36,7 +32,6 @@ function draw() {
             y = y - stepSize;
             break;
     }
-    previousr = r; 
     sleep(T);
 }
 
